@@ -1,0 +1,187 @@
+/* Custom Variables */
+:root {
+    --cream-bg: #faf6f1;
+    --cream-text: #2c2c2c;
+    --cream-accent: #e8d5c4;
+}
+
+/* General Styles */
+body {
+    background-color: var(--cream-bg);
+    color: var(--cream-text);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 76px; /* Add padding for fixed navbar */
+}
+
+/* Page Headers */
+.display-4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.display-4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--cream-accent);
+}
+
+/* Brand Text */
+.brand-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--cream-text);
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.brand-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cream-accent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.brand-text:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--cream-bg);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--cream-bg) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.nav-link {
+    color: var(--cream-text) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--cream-accent) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--cream-accent);
+    border-color: var(--cream-accent);
+    color: var(--cream-text);
+}
+
+.btn-primary:hover {
+    background-color: #d4c0b0;
+    border-color: #d4c0b0;
+    color: var(--cream-text);
+}
+
+.btn-outline-primary {
+    color: var(--cream-accent);
+    border-color: var(--cream-accent);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--cream-accent);
+    border-color: var(--cream-accent);
+    color: var(--cream-text);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--cream-bg) !important;
+    border-top: 1px solid var(--cream-accent);
+    margin-top: 3rem;
+}
+
+.footer a {
+    color: var(--cream-text);
+}
+
+.footer a:hover {
+    color: var(--cream-accent);
+}
+
+/* Social Icons */
+.social-icon {
+    color: var(--cream-text);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(232, 213, 196, 0.1);
+}
+
+.social-icon:hover {
+    color: var(--cream-accent);
+    transform: translateY(-3px);
+    opacity: 1;
+    background-color: rgba(232, 213, 196, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer specific styles */
+.footer .social-icon {
+    margin: 0 0.5rem;
+}
+
+.footer .social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    background-color: var(--cream-bg);
+    border: 1px solid var(--cream-accent);
+    color: var(--cream-text);
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--cream-accent);
+    box-shadow: 0 0 0 0.2rem rgba(232, 213, 196, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .brand-text {
+        font-size: 1.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    body {
+        padding-top: 66px;
+    }
+} 
