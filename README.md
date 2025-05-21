@@ -5,7 +5,6 @@ A responsive personal brand website for YUVALTY, a TikTok expert and social medi
 ## Features
 
 - Responsive design for all devices
-- Light/Dark mode toggle
 - Modern and clean UI with cream color theme
 - Static pages suitable for GitHub Pages hosting
 - No JavaScript frameworks or build steps required
